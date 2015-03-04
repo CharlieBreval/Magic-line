@@ -1,8 +1,8 @@
-# H1 Magic Line, a jQuery plugin for your menu?
+# Magic Line, a jQuery plugin for your menu?
 
 MagicLine is a jQuery plugin that append a div to your menu, following the user's hover.
 
-#H2 Getting started
+## Getting started
 
 All you need is a simple html structure :
 ```html
