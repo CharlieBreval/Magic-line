@@ -37,12 +37,5 @@ $(document).ready(function() {
 Optionally you can set the class for active elements which get the magic line set by default.
 
 ```javascript
-<script src="/magic-line.js"></script>
-
-<script>
-$(document).ready(function() {
-    $('#yourNavbar').magicLine({activeClass: '.active'});
-});
-
-</script>
+$('#yourNavbar').magicLine({activeClass: '.active'});
 ```
