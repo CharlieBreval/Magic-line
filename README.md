@@ -17,7 +17,7 @@ All you need is a simple html structure :
 
 Add this line to your css
 ```css
-#magic-line{ width: 100px; height: 6px; position: absolute; bottom: 0px; left: 0;  background: #000;}
+.magic-line{ width: 100px; height: 6px; position: absolute; bottom: 0px; left: 0;  background: #000;}
 ```
 
 

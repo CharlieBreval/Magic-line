@@ -1,12 +1,12 @@
 $.fn.magicLine = function(options) {
 
     var defaults = {
-        "activeClass" : ".active",
+        activeClass : '.active',
     }
 
     var options = $.extend(defaults, options);
 
-    var magicLine = $('<li></li>').attr('id', 'magic-line');
+    var magicLine = $('<li></li>').attr('class', 'magic-line');
     var mainNav = $(this);
     var active = mainNav.children(options.activeClass);
     var hoverEnabled = true;
@@ -16,7 +16,7 @@ $.fn.magicLine = function(options) {
     magicLine.data('base-width', magicLine.css('width'));
     mainNav.append(magicLine);
 
-    magicLine = $('#magic-line');
+    magicLine = $(this).find('.magic-line');
 
     $(mainNav).on('mouseenter', 'li', function(e) {
         e.preventDefault();
@@ -29,8 +29,8 @@ $.fn.magicLine = function(options) {
         e.preventDefault();
         if (hoverEnabled === true) {
             magicLine.stop().animate({
-                left: magicLine.data("base-left"),
-                width: magicLine.data("base-width")
+                left: magicLine.data('base-left'),
+                width: magicLine.data('base-width')
             });
         }
     });
@@ -58,6 +58,6 @@ $.fn.magicLine = function(options) {
         magicLine.stop().animate({
             left: leftPos,
             width: newWidth
-        }, 300, "swing");
+        }, 300, 'swing');
     };
 };
