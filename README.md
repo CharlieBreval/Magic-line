@@ -6,8 +6,8 @@ MagicLine is a jQuery plugin that append a div to your menu, following the user'
 
 All you need is a simple html structure :
 ```html
-<ul>
-    <li id="yourNavbar" class="active"><a href="#">First</a></li>
+<ul id="yourNavbar">
+    <li class="active"><a href="#">First</a></li>
     <li><a href="#">Second</a></li>
     <li><a href="#">Third</a></li>
     <li><a href="#">Fourth</a></li>
@@ -24,11 +24,24 @@ Add this line to your css
 
 Then you need a recent version of jQuery and the following initialization :
 ```javascript
-<script src="/magic-line.js'"></script>
+<script src="/magic-line.js"></script>
 
 <script>
 $(document).ready(function() {
     $('#yourNavbar').magicLine();
+});
+
+</script>
+```
+
+Optionally you can set the class for active elements which get the magic line set by default.
+
+```javascript
+<script src="/magic-line.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#yourNavbar').magicLine({activeClass: '.active'});
 });
 
 </script>
