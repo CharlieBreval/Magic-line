@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+        #yourNavbar, #yourNavbar2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+        #yourNavbar li, #yourNavbar2 li {
+            display: inline-block;
+            float: left;
+            list-style-type: none;
+            padding-left:12px;
+            padding-right:12px;
+        }
+        .magic-line {
+            width: 100px;
+            height: 6px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background: #000;
+        }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="magic-line.js"></script>
+        <ul id="yourNavbar">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Third</a></li>
+            <li class="active"><a href="#">Fourth</a></li>
+            <li><a href="#">Fifth</a></li>
+        </ul>
+
+        <ul id="yourNavbar2">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li class="active"><a href="#">Third</a></li>
+            <li><a href="#">Fourth</a></li>
+            <li><a href="#">Fifth</a></li>
+        </ul>
+        <script>
+        $(document).ready(function() {
+            $('#yourNavbar').magicLine();
+            $('#yourNavbar2').magicLine({activeClass: '.active'});
+        });
+        </script>
+    </body>
+</html>
