@@ -52,8 +52,8 @@ $.fn.magicLine = function(options) {
     });
 
     var animateMenu = function(li, magicLine) {
-        leftPos = li.position().left + 'px';
-        newWidth = li.css('width');
+        var leftPos = li.position().left + 'px';
+        var newWidth = li.css('width');
 
         magicLine.stop().animate({
             left: leftPos,
